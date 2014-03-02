@@ -1,0 +1,8 @@
+name: Compass Teleport
+version: 0.591.1
+main: com.theempiremc.EmpireCompass.Main
+author: OnesRodriguez
+commands:
+    gamechooserplz:
+        usage: /gamechooserplz
+        description: Gives you the game chooser (a custom inventory built into a diamond).
