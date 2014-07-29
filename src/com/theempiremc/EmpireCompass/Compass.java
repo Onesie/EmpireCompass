@@ -29,53 +29,53 @@ public class Compass implements Listener{
 		ArrayList<String> ComingSoon = new ArrayList<String>();
 		ArrayList<String> Diamond = new ArrayList<String>();
 		
-		Spawn.add("§AWhat a lovely beacon you have there!");
-		ConnectShot.add("§3Pow! Right in the kisser...");
-		ConnectFac.add("§6Non-PVP. Not even mobs can hurt yo balls.");
-		ConnectSG.add("§3The skull-bashing Survival Games. KATNISS!");
-		ConnectKit.add("§3Don't get too hot. YOU WILL BURN.");
-		ComingSoon.add("§cComing soon!");
-		Diamond.add("§9Click me to choose a gamemode!");
+		Spawn.add("ï¿½AWhat a lovely beacon you have there!");
+		ConnectShot.add("ï¿½3Pow! Right in the kisser...");
+		ConnectFac.add("ï¿½6Non-PVP. Not even mobs can hurt yo balls.");
+		ConnectSG.add("ï¿½3The skull-bashing Survival Games. KATNISS!");
+		ConnectKit.add("ï¿½3Don't get too hot. YOU WILL BURN.");
+		ComingSoon.add("ï¿½cComing soon!");
+		Diamond.add("ï¿½9Click me to choose a gamemode!");
 		
 		ItemStack diamondthing = new ItemStack(Material.DIAMOND);
 		ItemMeta diamondthing1 = diamondthing.getItemMeta();
-		diamondthing1.setDisplayName("§6§lGame Chooser! §7(Right-click)");
+		diamondthing1.setDisplayName("ï¿½6ï¿½lGame Chooser! ï¿½7(Right-click)");
 		diamondthing1.setLore(Diamond);
 		diamondthing.setItemMeta(diamondthing1);
 		
 		ItemStack spawn = new ItemStack(Material.SUGAR);
 		ItemMeta spawn1 = spawn.getItemMeta();
-		spawn1.setDisplayName("§eSpawn!");
+		spawn1.setDisplayName("ï¿½eSpawn!");
 		spawn1.setLore(Spawn);
 		spawn.setItemMeta(spawn1);
 		
 		ItemStack oits = new ItemStack(Material.BOW);
 		ItemMeta oits1 = oits.getItemMeta();
-		oits1.setDisplayName("§dOne In The Shot (OITS)");
+		oits1.setDisplayName("ï¿½dOne In The Shot (OITS)");
 		oits1.setLore(ConnectShot);
 		oits.setItemMeta(oits1);
 		
 		ItemStack fac = new ItemStack(Material.DIAMOND_CHESTPLATE);
 		ItemMeta fac1 = fac.getItemMeta();
-		fac1.setDisplayName("§eFactions");
+		fac1.setDisplayName("ï¿½eFactions");
 		fac1.setLore(ConnectFac);
 		fac.setItemMeta(fac1);
 		
 		ItemStack sg = new ItemStack(Material.IRON_SWORD);
 		ItemMeta sg1 = sg.getItemMeta();
-		sg1.setDisplayName("§eSurvival Games");
+		sg1.setDisplayName("ï¿½eSurvival Games");
 		sg1.setLore(ConnectSG);
 		sg.setItemMeta(sg1);
 		
 		ItemStack pvp = new ItemStack(Material.FLINT_AND_STEEL);
 		ItemMeta pvp1 = pvp.getItemMeta();
-		pvp1.setDisplayName("§eKit PVP");
+		pvp1.setDisplayName("ï¿½eKit PVP");
 		pvp1.setLore(ConnectKit);
 		pvp.setItemMeta(pvp1);
 		
 		ItemStack hide = new ItemStack(Material.WORKBENCH);
 		ItemMeta hide1 = hide.getItemMeta();
-		hide1.setDisplayName("§BBlockHunt");
+		hide1.setDisplayName("ï¿½BBlockHunt");
 		hide1.setLore(ComingSoon);
 		hide.setItemMeta(hide1);
 
@@ -137,6 +137,14 @@ public class Compass implements Listener{
 			return;			
 		}else{
 			player.performCommand("gimmehdagamechooser");
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		while (!sleeping) {
+			code();
 		}
 	}
 }
